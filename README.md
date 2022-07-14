@@ -17,12 +17,24 @@ They are directly connected and have some IPv4 and IPv6 prefixes on their respec
 ## Requirements
 
 - Linux >= 5.2 (kernel)
+- `git` or `wget`
 - `sudo` access or `NET_ADMIN` capability
 - iproute2 / `ip` command to drive netlink
 - python >= 3.8
   - Unless you want to configure the netns yourself
 
 ## Create netns
+
+### Clone this repo or wget json config
+
+#### git
+
+- `git clone https://github.com/cooperlees/v4v6demo.git`
+- `cd json2netns`
+
+#### wget
+
+- `wget -O p2p_json2netns.json https://raw.githubusercontent.com/cooperlees/v4v6demo/main/p2p_json2netns.json`
 
 ### Install json2netns
 

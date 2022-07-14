@@ -16,7 +16,7 @@ They are directly connected and have some IPv4 and IPv6 prefixes on their respec
 
 - Linux >= 5.2 (kernel)
 - `sudo` access or `NET_ADMIN` capability
-- iproute / `ip` command to drive netlink
+- iproute2 / `ip` command to drive netlink
 - python >= 3.8
   - Unless you want to configure the netns yourself
 

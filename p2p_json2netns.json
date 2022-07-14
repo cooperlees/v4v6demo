@@ -1,0 +1,38 @@
+{
+    "namespaces": {
+        "left": {
+            "id": 1,
+            "interfaces": {
+                "left0": {
+                    "prefixes": ["69::1/64", "fe80::1/64"],
+                    "peer_name": "right0",
+                    "type": "veth"
+                },
+                "lo": {
+                    "prefixes": ["10.6.9.1/32", "fd00:1::/64"],
+                    "type": "loopback"
+                }
+            },
+            "oob": false,
+            "routes": {}
+        },
+        "right": {
+            "id": 2,
+            "interfaces": {
+                "right0": {
+                    "prefixes": ["69::2/64", "fe80::2/64"],
+                    "peer_name": "left0",
+                    "type": "veth"
+                },
+                "lo": {
+                    "prefixes": ["10.6.9.2/32", "fd00:2::/64"],
+                    "type": "loopback"
+                }
+            },
+            "oob": false,
+            "routes": {}
+        }
+    },
+    "oob": {},
+    "physical_int": ""
+}

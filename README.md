@@ -9,6 +9,8 @@ We have two Linux network name spaces:
 - Left (on the left of the diagram)
 - Right (on the right of the diagram)
 
+![Lab Topology](lab_topology.png)
+
 They are directly connected and have some IPv4 and IPv6 prefixes on their respective
 `lo` interfaces. This lab we'll setup IPv4 routing via IPv6 to see it working in action.
 
